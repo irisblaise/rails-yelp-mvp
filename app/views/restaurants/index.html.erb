@@ -1,7 +1,19 @@
+
+<div class="row">
+  <div class=""></div>
+
 <h1>Restaurants</h1>
+</div>
 
 <ul>
   <% @restaurants.each do |restaurant| %>
   <li><%= link_to "#{restaurant.name}", restaurant_path(restaurant.id) %></li>
   <% end %>
 </ul>
+
+
+
+<%= link_to 'add', new_restaurant_path, {class: "btn btn-primary"} %>
+
+
+
